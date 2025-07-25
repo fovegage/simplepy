@@ -9,7 +9,7 @@ from Crypto.PublicKey import RSA
 from pyDes import des, ECB
 
 """
-pycrypto
+pycryptodome
 pydes
 
 加密算法：DES,AES,RSA, MD5, SHA, HMAC, base64

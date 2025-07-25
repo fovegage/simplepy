@@ -6,9 +6,8 @@ from functools import wraps
 from uuid import uuid1
 
 from aiohttp.client_exceptions import ClientError, ServerTimeoutError
+from loguru import logger
 from requests.exceptions import HTTPError
-
-from simplepy import logger
 
 
 def trying(counts):

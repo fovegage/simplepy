@@ -2,7 +2,6 @@ import os
 import sys
 
 import frida
-from flask import views
 from loguru import logger
 
 from simplepy.decorators import get_callback_path

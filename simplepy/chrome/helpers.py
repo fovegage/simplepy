@@ -9,11 +9,12 @@ if IS_WINDOWS:
 import requests
 
 import nacos
-from simplepy import IS_WINDOWS, logger, IS_LINUX
-from simplepy.multi_download import StreamDown
+from simplepy import IS_WINDOWS, IS_LINUX
+from simplepy.helpers.download import StreamDown
 from simplepy.utils import unzip_file, get_cmd_print
 from simplepy.utils import request_post
 from uuid import uuid1
+from loguru import logger
 
 
 def get_base_chrome_driver(version):

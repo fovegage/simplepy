@@ -10,7 +10,6 @@ from simplepy.config import MONGO_HOST, MONGO_PORT, MONGO_PWD, MONGO_AUTH_DB, MO
 from simplepy.config import MYSQL_USER, MYSQL_HOST, MYSQL_PWD, MYSQL_PORT
 from simplepy.config import REDIS_HOST, REDIS_PWD, REDIS_PORT, REDIS_DB
 
-warnings.filterwarnings("ignore")
 
 
 class VpnBookMongo:

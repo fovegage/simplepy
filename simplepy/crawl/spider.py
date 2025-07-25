@@ -1,11 +1,11 @@
 import os
 
 import pandas as pd
+from loguru import logger
 from tenacity import retry, stop_after_attempt
 
-from simplepy import logger
-from simplepy.decorators import get_callback_path
-from simplepy.utils import csv_save, base_download
+from simplepy.utils.common_utils import csv_save, base_download
+from simplepy.utils.decorators import get_callback_path
 
 
 # TODO:缓存包引入  requests-cache

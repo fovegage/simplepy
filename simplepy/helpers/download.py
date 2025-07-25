@@ -3,9 +3,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
 
 import requests
+from loguru import logger
 from tenacity import retry, stop_after_attempt
 
-from simplepy import logger
 from simplepy.decorators import get_time
 
 

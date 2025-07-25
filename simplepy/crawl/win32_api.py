@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-import random
 import platform
+import random
 import sys
-from simplepy import logger
+
+from loguru import logger
 
 if platform.system() == "Windows":
     import win32api

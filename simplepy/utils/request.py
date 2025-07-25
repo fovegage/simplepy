@@ -1,9 +1,8 @@
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
-import simplejson
-
-from simplepy import logger
+import orjson
+from loguru import logger
 
 
 def post(url: str, body: str or dict, headers: dict = None, log=False):
@@ -26,7 +25,7 @@ def post(url: str, body: str or dict, headers: dict = None, log=False):
 
     res = urlopen(url=req, timeout=12)
     with res:
-        content = simplejson.loads(res.read())
+        content = orjson.loads(res.read())
     if log:
         logger.info(content)
     return content

@@ -1,6 +1,6 @@
 import requests
 
-from simplepy import logger
+from loguru import logger
 from simplepy.web import CommonSel
 
 

@@ -2,7 +2,7 @@ import os
 
 import cv2
 
-from simplepy.decorators import get_callback_path, get_time
+from simplepy.utils.decorators import get_callback_path, get_time
 from simplepy.utils import download_image_decode
 
 
